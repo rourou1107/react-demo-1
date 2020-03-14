@@ -3,26 +3,18 @@ import React from 'react';
 class App extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {x: 1}
-    }
-
-    add = () => {
-        this.setState(state => ({x: state.x + 1}))
+        this.state = {
+            x: 1,
+            arr: [1, 2, 3]
+        }
     }
 
     render() {
-        let message
-        if (this.state.x % 2 === 0) {
-            message = <div>偶数</div>
-        } else {
-            message = <div>奇数</div>
+        let tempArr = []
+        for(let i=0; i<this.state.arr.length; i++){
+           tempArr.push(<div key={i}>{this.state.arr[i]}</div>)
         }
-        return (
-            <>
-                {message}
-                <button onClick={this.add}>+1</button>
-            </>
-        )
+        return (tempArr)
     }
 }
 
