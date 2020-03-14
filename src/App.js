@@ -1,26 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '肉肉',
+      x: 1
+    }
+  }
+  onClick = ()=>{
+    this.setState((state)=>({x: state.x+1}), ()=>{
+    })
+    console.log(this.state)
+  }
+  render(){
+    return (
+        <div>
+          {this.state.x}
+          --------父---------
+          <A name={this.state.name}
+             x={this.state.x}
+             onClick={this.onClick}
+          />
+        </div>
+    );
+  }
+}
+
+class A extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render(){
+    return (
+      <div>
+        {this.props.name}
+        --------子--------
+        {this.props.x}
+        <button onClick={this.props.onClick}>+1</button>
+      </div>
+    )
+  }
 }
 
 export default App;
