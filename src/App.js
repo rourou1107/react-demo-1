@@ -1,20 +1,27 @@
 import React from 'react';
 
 class App extends React.Component {
+    divRef = undefined
+
     constructor(props) {
         super(props);
         this.state = {
-            x: 1,
-            arr: [1, 2, 3]
+            width: undefined
         }
+        this.divRef = React.createRef()
+    }
+
+    componentDidMount() {
+        const div = this.divRef.current
+        const {width} = div.getBoundingClientRect()
+        this.setState(state => ({width}))
     }
 
     render() {
-        let tempArr = []
-        for(let i=0; i<this.state.arr.length; i++){
-           tempArr.push(<div key={i}>{this.state.arr[i]}</div>)
-        }
-        return (tempArr)
+        return (<div ref={this.divRef}>
+            hi
+            <span>{this.state.width}</span>
+        </div>)
     }
 }
 
