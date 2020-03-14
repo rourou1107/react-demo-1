@@ -6,23 +6,23 @@ class App extends React.Component {
         this.state = {x: 1}
     }
 
-    onClick = () => {
-        this.setState((state) => ({x: state.x + 1}));
-        this.setState((state) => ({x: state.x - 1}));
-    };
-
-    shouldComponentUpdate(nextProps, nextState) {
-        return nextState.n !== this.state.n;
+    add = () => {
+        this.setState(state => ({x: state.x + 1}))
     }
 
     render() {
-        console.log('render了');
+        let message
+        if (this.state.x % 2 === 0) {
+            message = <div>偶数</div>
+        } else {
+            message = <div>奇数</div>
+        }
         return (
-            <div>
-                {this.state.x}
-                <button onClick={this.onClick}>+1</button>
-            </div>
-        );
+            <>
+                {message}
+                <button onClick={this.add}>+1</button>
+            </>
+        )
     }
 }
 
