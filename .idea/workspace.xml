@@ -35,7 +35,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584175720781</updated>
-      <workItem from="1584175722176" duration="9886000" />
+      <workItem from="1584175722176" duration="10156000" />
     </task>
     <task id="LOCAL-00001" summary="使用 shouldComponentUpdate">
       <created>1584191828665</created>
@@ -65,7 +65,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584193923299</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="函数组件之模拟componentDidMount">
+      <created>1584253453173</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584253453173</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,16 +89,17 @@
     <MESSAGE value="使用 shouldComponentUpdate" />
     <MESSAGE value="render 使用 if" />
     <MESSAGE value="render 使用 for" />
-    <option name="LAST_COMMIT_MESSAGE" value="render 使用 for" />
+    <MESSAGE value="函数组件之模拟componentDidMount" />
+    <option name="LAST_COMMIT_MESSAGE" value="函数组件之模拟componentDidMount" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584176448363">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1584176448363" />
-    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1584193914364">
+    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1584253450603">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584193914364" />
+    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584253450603" />
   </component>
 </project>
