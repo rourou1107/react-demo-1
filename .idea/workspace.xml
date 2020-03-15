@@ -35,7 +35,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584175720781</updated>
-      <workItem from="1584175722176" duration="8467000" />
+      <workItem from="1584175722176" duration="9886000" />
     </task>
     <task id="LOCAL-00001" summary="使用 shouldComponentUpdate">
       <created>1584191828665</created>
@@ -58,7 +58,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584192743315</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="render 使用 for">
+      <created>1584193923299</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584193923299</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,9 +89,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1584176448363" />
-    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1584192728569">
+    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1584193914364">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584192728569" />
+    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584193914364" />
   </component>
 </project>

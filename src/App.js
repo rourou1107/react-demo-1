@@ -1,29 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-class App extends React.Component {
-    divRef = undefined
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            width: undefined
-        }
-        this.divRef = React.createRef()
+const App = () => {
+    const [n, setN] = useState(0)
+    const addN = ()=> {
+        setN(n+1)
     }
-
-    componentDidMount() {
-        const div = this.divRef.current
-        const {width} = div.getBoundingClientRect()
-        this.setState(state => ({width}))
-    }
-
-    render() {
-        return (<div ref={this.divRef}>
-            hi
-            <span>{this.state.width}</span>
-        </div>)
-    }
+    return (
+        <div>
+            {n}
+            <button onClick={addN}>n+1</button>
+        </div>
+    )
 }
-
 
 export default App;
