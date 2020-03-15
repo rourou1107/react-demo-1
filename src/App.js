@@ -1,26 +1,28 @@
 import React, {useState, useEffect} from 'react';
 
 const App = () => {
-    const [n, setN] = useState(0)
-    const [m, setM] = useState(0)
-    const addN = ()=> {
-        setN(n+1)
+    const [childVisible, setChildVisible] = useState(true)
+    const show = ()=> {
+        setChildVisible(true)
     }
-    const addM = ()=> {
-        setM(m+1)
+    const hide = ()=> {
+        setChildVisible(false)
     }
-    useEffect(()=>{
-        console.log('n变了')
-    }, [n, m])
     return (
         <div>
-            {n}
-            <button onClick={addN}>n+1</button>
-            <hr />
-            {m}
-            <button onClick={addM}>m+1</button>
+            {childVisible ? <button onClick={hide}>hide</button> : <button onClick={show}>show</button>}
+            {childVisible ? <Child /> : null}
         </div>
     )
 }
-
+const Child = ()=>{
+    useEffect(()=>{
+        return ()=>{
+            console.log('销毁了')
+        }
+    })
+    return (
+        <div>我是 child</div>
+    )
+}
 export default App;
