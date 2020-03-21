@@ -1,35 +1,37 @@
-import React, {createContext, useContext, useState} from 'react';
+import React, {memo, useMemo, useState} from 'react';
 import ReactDOM from 'react-dom';
 
-const C = createContext(null)
 
 const App = () => {
+    console.log('App 执行了')
     const [n, setN] = useState(0)
+    const [m, setM] = useState(0)
+    function addN(){
+        setN(n+1)
+    }
+    const addM = useMemo(()=>{
+        return ()=>{
+            setM(m+1)
+        }
+    }, [m])
     return (
-        <C.Provider value={{n, setN}}>
-            <Father/>
-        </C.Provider>
+        <div>
+            {n}
+            <button onClick={addN}>n+1</button>
+            <Child m={m} addM={addM}/>
+        </div>
     );
 };
-function Father () {
-    const {n} = useContext(C)
-    return (
-        <div>
-            我是爸爸：n为 {n}
-            <Child/>
-        </div>
-    )
-}
-function Child () {
-    const {n, setN} = useContext(C)
 
+const Child = memo((prop) => {
+    console.log('Child 执行了')
     return (
         <div>
-            我是儿子：n为 {n}
-            <button onClick={()=>setN(n=>n+1)}>n+1</button>
+            {prop.m}
+            <button onClick={prop.addM}>n+1</button>
         </div>
     )
-}
+})
 
 ReactDOM.render(<App/>, document.getElementById('root'));
 
