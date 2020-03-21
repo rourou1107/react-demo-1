@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf4ef69e-fad2-468d-aab5-bb20fd67e735" name="Default Changelist" comment="函数组件之模拟componentWillUnmount">
+    <list default="true" id="bf4ef69e-fad2-468d-aab5-bb20fd67e735" name="Default Changelist" comment="hook">
+      <change afterPath="$PROJECT_DIR$/src/reducers/books_reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/movies_reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/user_reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +39,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584175720781</updated>
-      <workItem from="1584175722176" duration="14310000" />
+      <workItem from="1584175722176" duration="18948000" />
+      <workItem from="1584368124585" duration="639000" />
+      <workItem from="1584535747909" duration="4858000" />
+      <workItem from="1584581902056" duration="9892000" />
+      <workItem from="1584669044804" duration="6841000" />
     </task>
     <task id="LOCAL-00001" summary="使用 shouldComponentUpdate">
       <created>1584191828665</created>
@@ -86,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584254525910</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="hook">
+      <created>1584258594118</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584258594118</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,16 +121,17 @@
     <MESSAGE value="函数组件之模拟componentDidMount" />
     <MESSAGE value="函数组件之模拟componentDidUpdate" />
     <MESSAGE value="函数组件之模拟componentWillUnmount" />
-    <option name="LAST_COMMIT_MESSAGE" value="函数组件之模拟componentWillUnmount" />
+    <MESSAGE value="hook" />
+    <option name="LAST_COMMIT_MESSAGE" value="hook" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584176448363">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1584176448363" />
-    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1584256168204">
+    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1584277955091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584256168204" />
+    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584277955091" />
   </component>
 </project>
